@@ -6,6 +6,7 @@ public class Main
         System.out.println("*** Welcome to Chick-Fil-A ***");
         int option = 1;
         Order order = new Order();
+
         while (option != 0) {
             System.out.println("");
             System.out.println("1. Chicken sandwich");
@@ -22,6 +23,9 @@ public class Main
             switch (option) {
                 case 0:
                     order.printOrder();
+                    break;
+                case 1:
+                    order.addChickenSandwich();
                     break;
                 //put your case below this comment
             }
